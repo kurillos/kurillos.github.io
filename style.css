@@ -131,3 +131,42 @@ iframe {
   width: 60%;
   padding-top: 140px;
 }
+
+
+@media(max-width:767px){
+ .wrapper {
+  display: block;
+  width: 80%;
+ }
+
+ .wrapperText {
+  font-size: 80%;
+ }
+
+ .findUs {
+  display: block;
+  width: 100%;
+ }
+
+ .findUsText {
+  font-size: 80%;
+  width: 80%;
+ }
+
+ .iframe {
+  width: 80%;
+ }
+
+ .containerFooter {
+  width: 80%;
+ }
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+/* @include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... } */
