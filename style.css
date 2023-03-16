@@ -1,172 +1,210 @@
-body{
-  background-color: #f5f5f5;  // eviter la couleur blanche, toujours teindre un minimum le fond 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-header{
-  border-bottom: 1px solid #ddd; // petite bordure pour délimiter 
-  padding: 20px 0; // un peu de padding pour aérer 
-}
-main{
-  padding: 20px 0; // même chose 
-}
-.navbar-brand {
-    height: 100px;
-    width: 100px;
+html {
+  scroll-behavior: smooth;
 }
 
-.compagnyName {
-    text-align: center;
-    color: blue;
+h2, h3, h4, .nav-item, #transition, footer {
+  text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
-  
-  td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-  }
-  
-  th {
-    background-color: rgb(235,235,235);
-  }
-  
-  td {
-    text-align: center;
-  }
-  
-  tr:nth-child(even) td {
-    background-color: rgb(250,250,250);
-  }
-  
-  tr:nth-child(odd) td {
-    background-color: rgb(245,245,245);
-  }
-  
-  caption {
-    padding: 10px;
-  }
+/* *****************HEADER***************** */
 
-  p {
-    text-align: center;
-  }
-
-.compagnyName {
-    text-align: center;
-    color: blue;
-};
-
-h2 h3 {
-   text-align: center;
+.collapse {
+  margin-left: 4%;
 }
 
-.content {
-    display:block;
-    text-align: center;
+.nav-item {
+  color: darkslategray;
+  font-weight: bold;
+  padding-right: 45px;
 }
 
-.price table {
-    display: inline-block;
-    text-align: center;
+header {
+background: url('./Assets/moulin.jpg') no-repeat 50% 50%;
+background-size: cover;
+height: 100vh;
+border-radius: 0px 0px 20px 20px;  
+margin-bottom: 40px;
 }
 
-.logoFacebook {
-  height: 50px;
-  width: 50px;
+h1 {
+  font-size: 5em;
+  padding: 200px 0 0 20%; 
+  text-shadow: -3px 3px 2px #BCF5A9;
+  animation: titre ease 5s;
 }
 
-.logoFooter {
-  height: 100px;
-  width: 100px;
+/* ***************LEFT PART *************** */
+
+#leftPart {
+  background-color: #BCF5A9;
+  border-radius: 20px;
+  padding: 25px;
 }
 
-.containerFooter {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid #ddd; // petite bordure pour délimiter 
+.elements {
+  padding: 70px 0;
 }
 
-.footerList {
-  list-style: none;
+.elements img {
+  border-radius: 100%;
+  width: 200px;
 }
 
-iframe {
-  border: 1px solid black;
-  width: 50%;
-  padding: 40px;
-}
-
-.wrapper {
-  display: flex;
-
-}
-
-.archeryWoman {
-  width: 50%;
-  height: 50%;
-}
-
-.wrapperText {
-  display: block;
-  padding-top: 130px; 
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
   padding-right: 20px;
 }
 
-.findUs {
-  display: flex;
-  padding: 40px;
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
 }
 
-.findUsText {
-  display: block;
-  width: 60%;
-  padding-top: 140px;
+/* **************************** LEFT PART ************************ */
+#leftPart {
+  background-color: #154c79;
+  border-radius: 20px;
+  padding: 25px;
+}
+.elements {
+  padding: 70px 0;
+}
+.elements img {
+  border-radius: 50%;
+  width: 200px;
+}
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20px;
+}
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
+}
+/* ************************** RIGHT PART ************************* */
+#rightPart {
+  background-color: #9B6833;
+  border-radius: 20px;
+  padding: 20px;
+}
+.tips {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+.tips h4 {
+  position: relative;
+  color: green;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
+}
+.tips:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+  transition: ease-out 0.2s;
 }
 
-
-@media(max-width:767px){
- .wrapper {
-  display: block;
-  width: 80%;
- }
-
- .wrapperText {
-  font-size: 80%;
- }
-
- .findUs {
-  display: block;
-  width: 100%;
- }
-
- .findUsText {
-  font-size: 80%;
-  width: 80%;
- }
-
- .iframe {
-  width: 80%;
- }
-
- .containerFooter {
-  width: 80%;
- }
+#transition {
+  padding: 50px 0;
 }
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+#transition img{
+  animation: rateau ease 12s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+}
 
-/* @include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-@include media-breakpoint-up(xxl) { ... } */
+/* *************************** NEWSLETTER ********************** */
+#newsletter {
+  background: url(./) no-repeat 50% 50%;
+  background-size: cover;
+  height: 370px;
+  width: 70%;
+  min-width: 450px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 70px;
+}
+#newsletter h4 {
+  margin-top: 15px;
+  padding: 100px 0 20px 0;
+  font-size: 2em;
+  text-shadow: 1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
+}
+#newsletter .input-group {
+  width: 40%;
+  min-width: 350px;
+  margin: 0 auto;
+}
+footer {
+  background-color: #BCF5A9;
+  padding: 15px 0 4px 0;
+}
+/* *********************** MEDIA QUERIES ********************** */
+@media screen and (max-width: 990px) {
+  #rightPart {
+    display: flex;
+  }
+  #rightPart h2 {
+    display: none;
+  }
+  .tips {
+    height: 130px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 790px) {
+  h1 {
+    font-size: 3em;
+  }
+  .elements {
+    padding: 30px 0;
+  }
+  .elements img {
+    max-width: 140px;
+    margin-top: 40px;
+  }
+  #transition img {
+    width: 250px;
+  }
+  .tips {
+    height: 90px;
+    width: 90px;
+  }
+  .tips h4 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 580px) {
+  .elements {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .elements img {
+    margin-bottom: 10px;
+  }
+  nav {
+    display: none !important;
+  }
+}
+
+/* ******************* KEYFRAMES **************** */
+
+@keyframes titre {
+  0% {
+    opacity: 0;
+    transform: translateY(350px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
