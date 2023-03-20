@@ -33,40 +33,9 @@ h1 {
   animation: titre ease 5s;
 }
 
-/* ***************LEFT PART *************** */
-
-#leftPart {
-  background-color: #BCF5A9;
-  border-radius: 20px;
-  padding: 25px;
-}
-
-.elements {
-  padding: 70px 0;
-}
-
-.elements img {
-  border-radius: 100%;
-  width: 200px;
-}
-
-.elements p {
-  font-size: 1.2em;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-  padding-right: 20px;
-}
-
-.elements .button {
-  text-align: right;
-  margin: 15px 4% 0 0;
-}
-
 /* **************************** LEFT PART ************************ */
 #leftPart {
-  background-color: #154c79;
+  background-color: #1174C4;
   border-radius: 20px;
   padding: 25px;
 }
@@ -91,14 +60,22 @@ h1 {
 }
 /* ************************** RIGHT PART ************************* */
 #rightPart {
-  background-color: #9B6833;
+  background-color: #432CC7;
   border-radius: 20px;
   padding: 20px;
+}
+
+#rightPart h2 {
+  padding-top: 60px;
+  color: green;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
 }
 .tips {
   height: 200px;
   width: 200px;
-  margin: 20px auto;
+  margin: auto;
 }
 .tips h4 {
   position: relative;
@@ -116,12 +93,27 @@ h1 {
 #transition {
   padding: 50px 0;
 }
-#transition img{
-  animation: rateau ease 12s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards; /*when the spec is finished*/
+
+
+/* *************************** FORM **************************** */
+
+.form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+.formLabel {
+  display: block;
 }
+
+.wrapper {
+  display: flex;
+  background-color: #1174C4;
+  border-radius: 20px;
+  padding: 25px;
+}
+
 
 /* *************************** NEWSLETTER ********************** */
 #newsletter {
@@ -149,6 +141,7 @@ footer {
   background-color: #BCF5A9;
   padding: 15px 0 4px 0;
 }
+
 /* *********************** MEDIA QUERIES ********************** */
 @media screen and (max-width: 990px) {
   #rightPart {
@@ -162,6 +155,13 @@ footer {
     width: 130px;
   }
 }
+
+@media screen and (max-width: 840px) {
+  #transition img {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 790px) {
   h1 {
     font-size: 3em;
@@ -184,6 +184,7 @@ footer {
     font-size: 0.9em;
   }
 }
+
 @media screen and (max-width: 580px) {
   .elements {
     padding: 15px 0;
@@ -193,9 +194,11 @@ footer {
     margin-bottom: 10px;
   }
   nav {
-    display: none !important;
+    display: none;
   }
 }
+
+
 
 /* ******************* KEYFRAMES **************** */
 
